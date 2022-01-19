@@ -25,6 +25,7 @@ const List = () => {
       <Typography variant="h4">
         Restaurants, Hotels & Attractions around you!
       </Typography>
+      {/* ここのFormControlではtypeのstateを変更している。onChangeでtypeとvalueが変わることによりユーザーが選んでいる項目がでる */}
       <FormControl className={classes.formControl}>
         <InputLabel>Type</InputLabel>
         <Select value={type} onChange={(e) => setType(e.target.value)}>
@@ -33,6 +34,7 @@ const List = () => {
           <MenuItem value="attractions">Attractions</MenuItem>
         </Select>
       </FormControl>
+      {/* ここのFormControlではratingのstateを変更している。onChangeでratingとvalueが変わる。上のFormと同じ機能 */}
       <FormControl className={classes.formControl}>
         <InputLabel>Rating</InputLabel>
         <Select value={rating} onChange={(e) => setRating(e.target.value)}>

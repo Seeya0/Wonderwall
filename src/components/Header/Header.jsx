@@ -19,6 +19,7 @@ const Header = ({ onPlaceChanged, onLoad }) => {
           <Typography variant="h6" className={classes.title}>
             Explore new places
           </Typography>
+          {/*AutocompleteはGoogleの設定ができていないと使用できない。未設定だとエラーが出て画面が描写されない*/}
           {/* <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}> */}
           <div className={classes.search}>
             <div className={classes.searchIcon}>
